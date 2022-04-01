@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Header from "../components/Header/Header";
-import HomePage from "../components/pages/HomePage";
-import SignUpPage from "../components/pages/SignUpPage";
-import SignInPage from "../components/pages/SignInPage";
+import Header from "./Header/Header";
+import HomePage from "./pages/HomePage";
+import SignUpPage from "./pages/SignUpPage";
+import SignInPage from "./pages/SignInPage";
 import "../App.css";
 import UserPage from "./pages/UserPage";
 import TopUpPage from "./pages/TopUpPage";
@@ -13,6 +13,8 @@ import AddProductPage from "./pages/AddProductPage";
 import GetUsersPage from "./pages/GetUsersPage";
 import EditProductPage from "./pages/EditProductPage";
 import EditUser from "./pages/EditUser";
+import DeliveryPage from "./pages/DeliveryPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   const token = useSelector((state) => state.application.token);
@@ -44,6 +46,8 @@ function App() {
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/signin" element={<SignInPage />} />
+        <Route path="/delivery" element={<DeliveryPage />} />
+        <Route path="/aboutUs" element={<AboutUsPage />} />
       </Routes>
     </div>
   );

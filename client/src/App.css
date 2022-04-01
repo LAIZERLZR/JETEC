@@ -50,6 +50,11 @@ body {
   margin-top: 7px;
 }
 
+.catalog a {
+  text-decoration: none;
+  color: #999;
+}
+
 .sign {
   width: 100px;
   margin-right: 50px;

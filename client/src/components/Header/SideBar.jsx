@@ -63,8 +63,12 @@ const SideBar = () => {
           ""
         )}
       </div>
-      <div>Доставка</div>
-      <div>О нас</div>
+      <Link to="/delivery">
+        <div>Доставка</div>
+      </Link>
+      <Link to="aboutUs">
+        <div>О нас</div>
+      </Link>
       {user?.role === "Moderator" ? (
         <div className="users__admin">
           <Link to="/getusers">Пользователь </Link>
