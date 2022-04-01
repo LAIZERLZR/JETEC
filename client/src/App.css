@@ -1,0 +1,689 @@
+body {
+  margin: 0;
+  background-color: #141414;
+}
+
+.app {
+  margin: 0 auto;
+}
+
+.header {
+  height: 40px;
+  background: #222;
+  border-bottom: 1px solid #2f2f2f;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  padding: 10px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.logo {
+  margin-left: 50px;
+  font-family: "Audiowide", sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog {
+  margin-left: 50px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Play", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.catalog div {
+  margin-top: 7px;
+}
+
+.sign {
+  width: 100px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__icon {
+  text-decoration: none;
+  color: rgb(64, 190, 64);
+}
+
+.sign__icon {
+  text-decoration: none;
+  color: rgb(245, 89, 89);
+  margin-left: 100px;
+}
+
+.logo__icon {
+  text-decoration: none;
+  color: white;
+}
+
+.form_container {
+  width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.form {
+  border: 1px solid rgb(64, 190, 64);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  -moz-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+}
+
+.signin__error {
+  margin-top: 10px;
+  color: rgb(245, 89, 89);
+  font-family: "Play";
+}
+
+.form button {
+  width: 150px;
+  height: 40px;
+  font-family: "Play";
+  font-size: 18px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 4px;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  flex-wrap: wrap;
+}
+
+.form input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  font-family: "Play";
+  font-size: 16px;
+  -webkit-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  -moz-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  border-radius: 4px;
+  border: 1px solid #d6a0df;
+  margin-top: 50px;
+}
+
+.sign__btn {
+  text-decoration: none;
+  color: #141414;
+}
+
+.signin__href {
+  text-decoration: none;
+  color: rgb(64, 190, 64);
+  font-family: "Play";
+}
+
+.signup__href {
+  text-decoration: none;
+  color: rgb(64, 190, 64);
+  font-family: "Play";
+}
+
+.signin__href__container {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.sidebar__links {
+  text-decoration: none;
+  color: #999;
+}
+
+.categoryModal {
+  width: 200px;
+  height: auto;
+  background-color: #222;
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  right: 1175px;
+  text-align: center;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+.categoryModal div {
+  margin-bottom: 13px;
+}
+
+.accessoriesModal {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  background-color: #222;
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  right: 845px;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+.userPage__container {
+  background-color: #1b1a1a;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.userPage {
+  margin: auto;
+  display: flex;
+}
+
+.user__image img {
+  width: 300px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 50px 8px rgba(34, 60, 80, 0.2);
+}
+
+.user__info {
+  font-family: "Play";
+  font-size: 20px;
+  color: #999;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.user__info div {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 5px;
+
+  margin-bottom: 25px;
+}
+
+.balance button {
+  width: 40px;
+  height: 35px;
+  font-family: "Play";
+  font-size: 20px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+}
+
+.exet {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.exet__href {
+  text-decoration: none;
+  color: #141414;
+}
+
+.exet__btn {
+  margin-left: 100px;
+  width: 120px;
+  height: 35px;
+  font-family: "Play";
+  font-size: 18px;
+  background-color: rgb(245, 89, 89);
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.15);
+}
+
+.topUp {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #1b1a1a;
+
+  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid rgb(245, 89, 89);
+  -webkit-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  -moz-box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+  box-shadow: 0px 11px 12px -2px rgba(34, 60, 80, 0.46);
+}
+
+.topUp input {
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(245, 89, 89);
+  background-color: unset;
+  color: white;
+  font-family: "Play";
+}
+
+.topUp button {
+  width: 150px;
+  height: 33px;
+  background-color: rgb(245, 89, 89);
+  border-radius: 4px;
+  border: none;
+  font-family: "Play";
+  font-size: 18px;
+}
+
+.catogory__href {
+  text-decoration: none;
+  color: #999;
+}
+
+.product__container {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__card {
+  background-color: #1b1a1a;
+  width: 300px;
+  border: 1px solid rgb(64, 190, 64);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.4);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.4);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.4);
+}
+
+.product__btn {
+  text-align: center;
+}
+
+.product__card button {
+  width: 250px;
+  height: 35px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.11);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.11);
+  box-shadow: 0px 4px 13px 0px rgba(68, 130, 178, 0.11);
+  font-family: "Play";
+  color: #141414;
+  font-size: 19px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product__card img {
+  width: 300px;
+  height: 230px;
+  margin-top: 20px;
+}
+
+.card__info {
+  font-size: 18px;
+  font-family: "Play";
+  color: white;
+}
+
+.card__info div {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.rating {
+  font-size: 22px;
+  color: rgb(64, 190, 64);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.topUp__href {
+  text-decoration: none;
+  color: #141414;
+}
+
+.modal__exetWindow {
+  position: absolute;
+  width: 250px;
+  right: -24px;
+  border-radius: 4px;
+}
+
+.modal__exetWindow h4 {
+  color: #999;
+}
+
+.exet__yes {
+  background-color: rgb(245, 89, 89);
+  width: 80px;
+  border: none;
+  height: 25px;
+  font-family: "Play";
+  font-size: 19px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.exetWindow__btn {
+  width: 200px;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+}
+
+.exet__no {
+  background-color: rgb(64, 190, 64);
+  border: none;
+  width: 80px;
+  height: 25px;
+  font-family: "Play";
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card__container {
+  position: absolute;
+  background-color: #222;
+  left: 1069px;
+  top: 60px;
+  border-radius: 4px;
+  font-family: "Play";
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+.card__container button {
+  width: 30px;
+  height: 25px;
+  font-size: 18px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+thead {
+  color: rgb(64, 190, 64);
+}
+
+tbody {
+  color: white;
+}
+
+.card__img {
+  width: 70px;
+}
+
+.number {
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.bascet {
+  position: relative;
+}
+
+.bascet span {
+  font-family: "Play";
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  bottom: 10px;
+  width: 5px;
+  height: 15px;
+  background-color: unset;
+  color: #fff;
+  display: inline-block;
+  padding-left: 4px;
+  padding-right: 5px;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+.closeModal__icon {
+  color: rgb(245, 89, 89);
+}
+
+.footer__card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__card div {
+  font-family: "Play";
+  color: rgb(245, 89, 89);
+  height: auto;
+  font-size: 20px;
+}
+
+.empty__card {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty__card span {
+  margin-left: 30px;
+}
+
+.payment__icon {
+  text-decoration: none;
+  color: rgb(245, 89, 89);
+}
+
+.payment__container {
+  background-color: #1b1a1a;
+  margin: 0 auto;
+  width: 800px;
+  border: 2px solid rgb(64, 190, 64);
+  border-radius: 4px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+.card__products {
+  width: 800px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "Play";
+}
+
+.card__products td {
+  width: 200px;
+  text-align: center;
+}
+
+.card__products img {
+  width: 150px;
+}
+
+.address__container {
+  width: 300px;
+  text-align: center;
+}
+
+.address__container span {
+  margin-right: 100px;
+  color: rgb(64, 190, 64);
+  font-family: "Play";
+  font-size: 20px;
+}
+.address__container input {
+  width: 300px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: unset;
+  border: 1px solid rgb(64, 190, 64);
+  border-radius: 3px;
+}
+
+.payment {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.payment button {
+  width: 100px;
+  height: 32px;
+  background-color: rgb(64, 190, 64);
+  font-size: 16px;
+  font-family: "Play";
+  border: none;
+  border-radius: 4px;
+}
+
+.payment__href {
+  text-decoration: none;
+  color: rgb(64, 190, 64);
+  font-family: "Play";
+}
+
+.payment__btn {
+  text-decoration: none;
+  color: #141414;
+}
+
+.result__price {
+  font-family: "Play";
+  font-size: 18px;
+  color: rgb(245, 89, 89);
+  margin: 20px 0;
+}
+
+.addProduct__container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.addProduct__forms input {
+  font-family: "Play";
+  font-size: 17px;
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(64, 190, 64);
+  background-color: #1b1a1a;
+  border-radius: 4px;
+  padding: 5px;
+  color: #fff;
+}
+
+.addProduct__forms {
+  text-align: center;
+}
+
+.addProduct__div {
+  text-align: center;
+}
+
+.addProduct__div button {
+  width: 120px;
+  height: 35px;
+  font-family: "Play";
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(64, 190, 64);
+}
+
+.users__admin a {
+  text-decoration: none;
+  color: #999;
+}
+
+.users__container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(64, 190, 64);
+  font-family: "Play";
+  margin-bottom: 20px;
+}
+
+.users img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+}
+
+.delete__user {
+  color: rgb(245, 89, 89);
+}
+
+.deleteProduct__icon {
+  text-decoration: none;
+  color: rgb(245, 89, 89);
+  font-size: 20px;
+  position: absolute;
+  left: 470px;
+}
+
+.addProduct__btn {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.addProduct__btn button {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 20px 0 20px 0;
+  font-family: "Play";
+  font-size: 17px;
+  margin-bottom: 20px;
+}
