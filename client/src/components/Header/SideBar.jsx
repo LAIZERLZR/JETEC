@@ -41,7 +41,7 @@ const SideBar = () => {
           ""
         )}
       </div>
-      <div>Сервера</div>
+
       <div
         onMouseLeave={() => setAccessoriesModal(false)}
         onMouseOver={() => setAccessoriesModal(true)}
@@ -66,9 +66,10 @@ const SideBar = () => {
       <Link to="/delivery">
         <div>Доставка</div>
       </Link>
-      <Link to="aboutUs">
+      <Link to="/aboutUs">
         <div>О нас</div>
       </Link>
+      <div>Помощь</div>
       {user?.role === "Moderator" ? (
         <div className="users__admin">
           <Link to="/getusers">Пользователь </Link>

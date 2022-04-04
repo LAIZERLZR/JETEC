@@ -15,6 +15,7 @@ import EditProductPage from "./pages/EditProductPage";
 import EditUser from "./pages/EditUser";
 import DeliveryPage from "./pages/DeliveryPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import Product from "./pages/Product";
 
 function App() {
   const token = useSelector((state) => state.application.token);
@@ -34,6 +35,13 @@ function App() {
           <Route path="getUsers" element={<GetUsersPage />} />
           <Route path="editProduct/:id" element={<EditProductPage />} />
           <Route path="editUser/:id" element={<EditUser />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/delivery" element={<DeliveryPage />} />
+          <Route path="/aboutUs" element={<AboutUsPage />} />
+          <Route path="/products/:id" element={<Product />} />
         </Routes>
       </div>
     );

@@ -7,6 +7,7 @@ import { faStar, faClose } from "@fortawesome/free-solid-svg-icons";
 import { addToCard, getUser } from "../../redux/reafutes/application";
 import { deleteProduct } from "../../redux/reafutes/product";
 import { Link } from "react-router-dom";
+import Aos from "aos";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const ProductPage = () => {
   useEffect(() => {
     dispatch(fetchProduct());
     dispatch(getUser());
+    Aos.init({ duration: 1200 });
   }, [dispatch]);
 
   const products = useSelector((state) =>
@@ -58,7 +60,7 @@ const ProductPage = () => {
       <div className="product__container">
         {products.map((item) => {
           return (
-            <div className="product__card" key={item._id}>
+            <div data-aos="fade-up" className="product__card" key={item._id}>
               {user?.role === "Admin" ? (
                 <div>
                   <FontAwesomeIcon
@@ -70,8 +72,10 @@ const ProductPage = () => {
               ) : (
                 <></>
               )}
-              <div>
-                <img src={item.image} alt="" />
+              <div className="product__image">
+                <Link to={`/products/${item._id}`}>
+                  <img src={item.image} alt="" />
+                </Link>
               </div>
 
               <div className="card__info">

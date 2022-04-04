@@ -19,7 +19,6 @@ body {
   align-items: center;
   color: #999;
   padding: 10px;
-  margin-bottom: 50px;
   position: relative;
 }
 
@@ -166,6 +165,7 @@ body {
   -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  z-index: 9999;
 }
 
 .categoryModal div {
@@ -174,17 +174,18 @@ body {
 
 .accessoriesModal {
   position: absolute;
-  width: 200px;
+  width: 200px; 
   height: auto;
   background-color: #222;
   position: absolute;
   padding: 10px;
   border-radius: 4px;
   text-align: center;
-  right: 845px;
+  right: 1005px;
   -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  z-index: 9999;
 }
 
 .userPage__container {
@@ -306,11 +307,12 @@ body {
 .catogory__href {
   text-decoration: none;
   color: #999;
+  cursor: pointer;
 }
 
 .product__container {
   width: 76%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -346,8 +348,12 @@ body {
   cursor: pointer;
 }
 
-.product__card img {
-  width: 300px;
+.product__image {
+  text-align: center;
+}
+.product__image img {
+  text-align: center;
+  width: 80%;
   height: 230px;
   margin-top: 20px;
 }
@@ -427,6 +433,7 @@ body {
   -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
   box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  z-index: 9999;
 }
 
 .card__container button {
@@ -620,6 +627,7 @@ tbody {
 
 .addProduct__forms {
   text-align: center;
+  margin-top: 50px;
 }
 
 .addProduct__div {
@@ -680,6 +688,7 @@ tbody {
   width: 50%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .addProduct__btn button {
@@ -691,4 +700,150 @@ tbody {
   font-family: "Play";
   font-size: 17px;
   margin-bottom: 20px;
+}
+
+.swiper {
+  height: calc(100vh - 61px);
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.3);
+}
+
+.slider {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider__info {
+  margin-left: 100px;
+  margin-top: 250px;
+  text-align: center;
+  width: 400px;
+  color: #fff;
+  font-family: "Play";
+  font-size: 24px;
+}
+
+.slider__info button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Play";
+  background-color: rgb(39, 39, 223);
+  border: none;
+}
+
+.aos__container {
+  width: 100%;
+  height: auto;
+}
+
+.homePage__iframe {
+  -webkit-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  -moz-box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.2);
+  box-shadow: 0px 14px 17px -2px rgba(45, 84, 114, 0.3);
+  border-radius: 10px;
+}
+
+.homePage__iframe iframe {
+  border-radius: 10px;
+}
+
+.aos__block {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Play";
+  color: #fff;
+  display: flex;
+  margin: 30px auto;
+}
+
+.aos__block img {
+  width: 300px;
+}
+
+.aos__block__info {
+  width: 500px;
+}
+
+.aos__block span {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.aos__block button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  font-family: "Play";
+  font-size: 16px;
+  background-color: rgb(64, 190, 64);
+  border: none;
+  border-radius: 10px 0 10px 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(64, 190, 64);
+  border-radius: 10px;
+}
+
+.product__content__container {
+  border: 1px solid rgb(64, 190, 64);
+  border-radius: 4px;
+  width: 1000px;
+  margin: 50px auto;
+  background-color: #1b1a1a;
+}
+
+.product__info {
+  display: flex;
+}
+
+.product__img img {
+  width: 270px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.product__content {
+  margin-top: 60px;
+  font-size: 20px;
+  font-family: "Play";
+  color: #fff;
+  height: auto;
+  margin-left: 70px;
+}
+
+.product__content button {
+  width: 190px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(64, 190, 64);
+  color: #141414;
+  font-size: 18px;
+  font-family: "Play";
+}
+
+.product__content div {
+  margin-bottom: 20px;
+}
+
+.product__desc div {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Play";
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
 }

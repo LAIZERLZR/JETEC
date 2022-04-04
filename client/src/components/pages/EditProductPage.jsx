@@ -14,6 +14,7 @@ const EditProductPage = () => {
   const [image, setImage] = useState("");
   const [left, setLeft] = useState("");
   const [rating, setRating] = useState("");
+  const [video, setvideo] = useState("");
   const [category, setCategory] = useState("");
   const [idCateogry, setIdCategory] = useState("");
 
@@ -41,6 +42,10 @@ const EditProductPage = () => {
     setRating(e.target.value);
   };
 
+  const handleChangeVideo = (e) => {
+    setvideo(e.target.value);
+  };
+
   const handleChangeCategory = (e) => {
     setCategory(e.target.value);
   };
@@ -50,16 +55,20 @@ const EditProductPage = () => {
   };
 
   const keys = {
-    name, price, desc, image, left, rating, category, idCateogry, id
-  }
-
-  const handleEditProduct = () => {
-    dispatch(
-      editProduct(keys)
-    );
+    name,
+    price,
+    desc,
+    image,
+    left,
+    rating,
+    category,
+    idCateogry,
+    id,
   };
 
-
+  const handleEditProduct = () => {
+    dispatch(editProduct(keys));
+  };
 
   return (
     <div className="addProduct__container">
@@ -99,6 +108,12 @@ const EditProductPage = () => {
           onChange={handleChangeRating}
           type="text"
           placeholder="Рейтинг"
+        />
+        <input
+          value={video}
+          onChange={handleChangeVideo}
+          type="text"
+          placeholder="Ссылка на видео"
         />
         <input
           value={category}

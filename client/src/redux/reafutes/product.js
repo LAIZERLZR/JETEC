@@ -110,6 +110,7 @@ export const addProduct = (
   image,
   left,
   rating,
+  video,
   category,
   categoryId
 ) => {
@@ -126,6 +127,7 @@ export const addProduct = (
           image,
           left,
           rating,
+          video,
           category,
           categoryId,
         }),
@@ -167,11 +169,19 @@ export const editProduct = (keys) => {
   return async (dispatch, getState) => {
     const state = getState();
     dispatch({ type: "editProduct/panding" });
-    const { name, price, desc, image, left, rating, category, idCateogry, id } =
-      keys;
-    console.log(id);
+    const {
+      name,
+      price,
+      desc,
+      image,
+      left,
+      rating,
+      video,
+      category,
+      idCateogry,
+      id,
+    } = keys;
     try {
-      console.log(2);
       const res = await fetch("http://localhost:4000/product/" + id, {
         method: "PATCH",
         headers: {
@@ -185,11 +195,11 @@ export const editProduct = (keys) => {
           image,
           left,
           rating,
+          video,
           category,
           categoryId: idCateogry,
         }),
       });
-      console.log(1);
       const editProduct = await res.json();
       dispatch({ type: "editProduct/fulfilled", payload: editProduct });
     } catch (error) {
