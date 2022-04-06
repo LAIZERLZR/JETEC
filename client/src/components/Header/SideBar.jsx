@@ -34,7 +34,7 @@ const SideBar = () => {
                     <div>{item.name}</div>
                   </Link>
                 );
-              }
+              } 
             })}
           </div>
         ) : (

@@ -8,7 +8,7 @@ const reviewSchema = mongoose.Schema({
   },
   productId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "News",
+    ref: "Product",
   },
 });
 

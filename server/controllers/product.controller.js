@@ -11,6 +11,7 @@ module.exports.productController = {
         left,
         amount,
         rating,
+        video,
         category,
         categoryId,
       } = req.body;
@@ -22,6 +23,7 @@ module.exports.productController = {
         left,
         amount,
         rating,
+        video,
         category,
         categoryId,
       });
@@ -42,6 +44,7 @@ module.exports.productController = {
         left,
         amount,
         rating,
+        video,
         category,
         categoryId,
       } = req.body;
@@ -54,6 +57,7 @@ module.exports.productController = {
         left,
         amount,
         rating,
+        video,
         category,
         categoryId,
       });

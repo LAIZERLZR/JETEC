@@ -20,23 +20,20 @@ const TopProducts = () => {
   return (
     <div className="aos__container">
       <div data-aos="fade-up" className="aos__block">
+        <div className="homePage__iframe">
+          <iframe 
+            src={products[product]?.video}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
         <div className="aos__block__info">
           <h2>{products[product]?.name}</h2>
           <span>{products[product]?.description}</span>
           <div>
             <button>Перейти</button>
           </div>
-        </div>
-        <div className="homePage__iframe">
-          <iframe
-            width="900"
-            height="450"
-            src={products[product]?.video}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
     </div>

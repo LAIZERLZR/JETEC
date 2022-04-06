@@ -11,6 +11,7 @@ const productSchema = mongoose.Schema({
     default: 1,
   },
   rating: Number,
+  video: String,
   category: String,
   categoryId: {
     type: mongoose.Schema.Types.ObjectId,

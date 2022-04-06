@@ -5,9 +5,9 @@ module.exports.reviewController = {
     try {
       const { text, productId } = req.body;
       const createReview = await Review.create({
+        text,
         userId: req.user.id,
         productId,
-        text,
       });
       res.json(createReview);
     } catch (error) {
